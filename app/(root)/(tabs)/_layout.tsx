@@ -22,6 +22,7 @@ const TabsLayout = () => {
             screenOptions={
                 {
                     tabBarShowLabel: false,
+                    headerShown: false,
                     tabBarStyle: {
                         backgroundColor: 'white',
                         borderTopColor: 'absolute',

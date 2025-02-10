@@ -11,6 +11,9 @@ export default function Index() {
       }}
     >
       <Text className="my-10 font-rubik text-3xl">Welcome to MoState</Text>
+      <Link href="/sign-in" className="text-primary-300">
+        Sign in
+      </Link>
     </View>
   );
 }

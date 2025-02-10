@@ -1,19 +1,26 @@
+import Search from "@/components/Search";
+import icons from "@/constants/icons";
+import images from "@/constants/images";
 import { Link } from "expo-router";
-import { Text, View } from "react-native";
+import { Text, View, Image } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function Index() {
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Text className="my-10 font-rubik text-3xl">Welcome to MoState</Text>
-      <Link href="/sign-in" className="text-primary-300">
-        Sign in
-      </Link>
-    </View>
+    <SafeAreaView>
+      <View className="px-5">
+        <View className="flex-row items-center justify-between">
+          <View className="flex-row items-center">
+            <Image source={images.avatar} className="size-12 rounded-full" />
+            <View className="ml-3">
+              <Text className="text-xs font-rubik-medium">Good morning</Text>
+              <Text className="text-gray-500">Moetez</Text>
+            </View> 
+          </View>
+          <Image source={icons.bell} className="size-6" />
+        </View> 
+        <Search />  
+      </View>
+    </SafeAreaView>
   );
 }

@@ -32,6 +32,13 @@ const TabsLayout = () => {
                 }
             }
         >
+            <Tabs.Screen name="sign-in" options={{
+                tabBarIcon: ({ focused }) => (
+                    <TabIcon focused={focused} title="Connectez vous" icon={icons.home} />
+                ),
+            }}  
+            />
+
             <Tabs.Screen name="index" options={{
                 tabBarIcon: ({ focused }) => (
                     <TabIcon focused={focused} title="Home" icon={icons.home} />

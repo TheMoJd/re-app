@@ -44,18 +44,17 @@ export const Card = ({onPress}: interfaceProps) => {
                 </Text>
             </View>
 
-            <Image source={images.newYork} className="size-full h-40 rounded-lg" />
-            <View className="flex-col items-start absolute bottom-5 inset-x-5">
-                <Text className="text-lg font-rubik-extrabold text-black-300" numberOfLines={1}>
-                    Appartement neuf
+            <Image source={images.newYork} className="w-full h-40 rounded-lg" />
+            <View className="flex-col mt-2">
+                <Text className="text-base font-rubik-extrabold text-black-300" numberOfLines={1}>
+                    Studio cozy
                 </Text>
-                <Text className="text-base font-rubik text-gray-500" numberOfLines={1}>
+                <Text className="text-base font-rubik text-black-100" numberOfLines={1}>
                     1 rue Victor Hugo, 29200
                 </Text>
-                <View className="flex-row items-center justify-between w-full">
+                <View className="flex-row items-center justify-between w-full mt-2">
                     <Text className="text-base font-rubik-extrabold text-primary-300">$2000/mois</Text>
-                    <Text className="text-base font-rubik text-gray-500 ml-1"></Text>
-                    <Image source={icons.heart} className="size-5" />
+                    <Image source={icons.heart} className="w-5 h-5 mr-2" />
                 </View>
             </View>
         </TouchableOpacity>

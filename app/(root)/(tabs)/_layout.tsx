@@ -34,10 +34,10 @@ const TabsLayout = () => {
         >
             <Tabs.Screen name="sign-in" options={{
                 tabBarIcon: ({ focused }) => (
-                    <TabIcon focused={focused} title="Connectez vous" icon={icons.home} />
+                    <TabIcon focused={focused} title="Connexion" icon={icons.rightArrow} />
                 ),
             }}  
-            />
+            /> 
 
             <Tabs.Screen name="index" options={{
                 tabBarIcon: ({ focused }) => (
@@ -58,7 +58,8 @@ const TabsLayout = () => {
                     <TabIcon focused={focused} title="Profile" icon={icons.person} />
                 ),
             }}
-            />  
+            /> 
+            
         </Tabs>
         
     );
